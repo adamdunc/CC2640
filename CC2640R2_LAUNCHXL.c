@@ -53,7 +53,7 @@
 #include <ti/drivers/ADCBuf.h>
 #include <ti/drivers/adcbuf/ADCBufCC26XX.h>
 
-ADCBufCC26XX_Object adcBufCC26xxObjects[CC2640R2_LAUNCHXL_ADCBUFCOUNT];
+//ADCBufCC26XX_Object adcBufCC26xxObjects[CC2640R2_LAUNCHXL_ADCBUFCOUNT];
 
 /*
  *  This table converts a virtual adc channel into a dio and internal analogue
@@ -62,6 +62,7 @@ ADCBufCC26XX_Object adcBufCC26xxObjects[CC2640R2_LAUNCHXL_ADCBUFCOUNT];
  *  pairs are hardwired. Do not remap them in the table. You may reorder entire
  *  entries. The mapping of dio and internal signals is package dependent.
  */
+/*
 const ADCBufCC26XX_AdcChannelLutEntry ADCBufCC26XX_adcChannelLut[CC2640R2_LAUNCHXL_ADCBUF0CHANNELCOUNT] = {
     {CC2640R2_LAUNCHXL_DIO23_ANALOG, ADC_COMPB_IN_AUXIO7},
     {CC2640R2_LAUNCHXL_DIO24_ANALOG, ADC_COMPB_IN_AUXIO6},
@@ -95,10 +96,11 @@ const ADCBuf_Config ADCBuf_config[CC2640R2_LAUNCHXL_ADCBUFCOUNT] = {
 };
 
 const uint_least8_t ADCBuf_count = CC2640R2_LAUNCHXL_ADCBUFCOUNT;
-
+*/
 /*
  *  =============================== ADC ===============================
  */
+/*
 #include <ti/drivers/ADC.h>
 #include <ti/drivers/adc/ADCCC26XX.h>
 
@@ -221,7 +223,7 @@ const ADC_Config ADC_config[CC2640R2_LAUNCHXL_ADCCOUNT] = {
 };
 
 const uint_least8_t ADC_count = CC2640R2_LAUNCHXL_ADCCOUNT;
-
+*/
 /*
  *  =============================== Crypto ===============================
  */
@@ -273,7 +275,7 @@ const DisplayUart_HWAttrs displayUartHWAttrs = {
     .strBuf       = uartStringBuf,
     .strBufLen    = BOARD_DISPLAY_UART_STRBUF_SIZE,
 };
-
+/*
 const DisplaySharp_HWAttrs displaySharpHWattrs = {
     .spiIndex    = CC2640R2_LAUNCHXL_SPI0,
     .csPin       = CC2640R2_LAUNCHXL_LCD_CS,
@@ -284,7 +286,7 @@ const DisplaySharp_HWAttrs displaySharpHWattrs = {
     .pixelHeight = BOARD_DISPLAY_SHARP_SIZE,
     .displayBuf  = sharpDisplayBuf,
 };
-
+*/
 #ifndef BOARD_DISPLAY_USE_UART
 #define BOARD_DISPLAY_USE_UART 1
 #endif
@@ -353,7 +355,7 @@ GPIO_PinConfig gpioPinConfigs[] = {
 
     /* Output pins */
     GPIOCC26XX_DIO_07 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_HIGH | GPIO_CFG_OUT_LOW,  /* Green LED */
-    GPIOCC26XX_DIO_06 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_HIGH | GPIO_CFG_OUT_LOW,  /* Red LED */
+    GPIOCC26XX_DIO_00 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_HIGH | GPIO_CFG_OUT_LOW,  /* Red LED */
 
     /* SPI Flash CSN */
     GPIOCC26XX_DIO_20 | GPIO_CFG_OUT_STD | GPIO_CFG_OUT_STR_HIGH | GPIO_CFG_OUT_HIGH,
@@ -543,8 +545,8 @@ const PIN_Config BoardGpioInitTable[] = {
 
     CC2640R2_LAUNCHXL_PIN_RLED | PIN_GPIO_OUTPUT_EN | PIN_GPIO_LOW | PIN_PUSHPULL | PIN_DRVSTR_MAX,       /* LED initially off */
     CC2640R2_LAUNCHXL_PIN_GLED | PIN_GPIO_OUTPUT_EN | PIN_GPIO_LOW | PIN_PUSHPULL | PIN_DRVSTR_MAX,       /* LED initially off */
-    CC2640R2_LAUNCHXL_PIN_BTN1 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_BOTHEDGES | PIN_HYSTERESIS,          /* Button is active low */
-    CC2640R2_LAUNCHXL_PIN_BTN2 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_BOTHEDGES | PIN_HYSTERESIS,          /* Button is active low */
+    //CC2640R2_LAUNCHXL_PIN_BTN1 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_BOTHEDGES | PIN_HYSTERESIS,          /* Button is active low */
+    //CC2640R2_LAUNCHXL_PIN_BTN2 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_BOTHEDGES | PIN_HYSTERESIS,          /* Button is active low */
     CC2640R2_LAUNCHXL_SPI_FLASH_CS | PIN_GPIO_OUTPUT_EN | PIN_GPIO_HIGH | PIN_PUSHPULL | PIN_DRVSTR_MIN,  /* External flash chip select */
     CC2640R2_LAUNCHXL_UART_RX | PIN_INPUT_EN | PIN_PULLDOWN,                                              /* UART RX via debugger back channel */
     CC2640R2_LAUNCHXL_UART_TX | PIN_GPIO_OUTPUT_EN | PIN_GPIO_HIGH | PIN_PUSHPULL,                        /* UART TX via debugger back channel */

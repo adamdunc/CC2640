@@ -74,28 +74,28 @@ extern const PIN_Config BoardGpioInitTable[];
  */
 
 /* Analog Capable DIOs */
-#define CC2640R2_LAUNCHXL_DIO23_ANALOG          IOID_23
-#define CC2640R2_LAUNCHXL_DIO24_ANALOG          IOID_24
-#define CC2640R2_LAUNCHXL_DIO25_ANALOG          IOID_25
-#define CC2640R2_LAUNCHXL_DIO26_ANALOG          IOID_26
-#define CC2640R2_LAUNCHXL_DIO27_ANALOG          IOID_27
-#define CC2640R2_LAUNCHXL_DIO28_ANALOG          IOID_28
-#define CC2640R2_LAUNCHXL_DIO29_ANALOG          IOID_29
-#define CC2640R2_LAUNCHXL_DIO30_ANALOG          IOID_30
+//#define CC2640R2_LAUNCHXL_DIO23_ANALOG          IOID_23
+//#define CC2640R2_LAUNCHXL_DIO24_ANALOG          IOID_24
+//#define CC2640R2_LAUNCHXL_DIO25_ANALOG          IOID_25
+//#define CC2640R2_LAUNCHXL_DIO26_ANALOG          IOID_26
+//#define CC2640R2_LAUNCHXL_DIO27_ANALOG          IOID_27
+//#define CC2640R2_LAUNCHXL_DIO28_ANALOG          IOID_28
+//#define CC2640R2_LAUNCHXL_DIO29_ANALOG          IOID_29
+//#define CC2640R2_LAUNCHXL_DIO30_ANALOG          IOID_30
 
 /* Digital IOs */
 #define CC2640R2_LAUNCHXL_DIO0                  IOID_0
 #define CC2640R2_LAUNCHXL_DIO1_RFSW             IOID_1
-#define CC2640R2_LAUNCHXL_DIO12                 IOID_12
-#define CC2640R2_LAUNCHXL_DIO15                 IOID_15
-#define CC2640R2_LAUNCHXL_DIO16_TDO             IOID_16
-#define CC2640R2_LAUNCHXL_DIO17_TDI             IOID_17
-#define CC2640R2_LAUNCHXL_DIO21                 IOID_21
-#define CC2640R2_LAUNCHXL_DIO22                 IOID_22
+//#define CC2640R2_LAUNCHXL_DIO12                 IOID_12
+//#define CC2640R2_LAUNCHXL_DIO15                 IOID_15
+//#define CC2640R2_LAUNCHXL_DIO16_TDO             IOID_16
+//#define CC2640R2_LAUNCHXL_DIO17_TDI             IOID_17
+//#define CC2640R2_LAUNCHXL_DIO21                 IOID_21
+//#define CC2640R2_LAUNCHXL_DIO22                 IOID_22
 
 /* Discrete Inputs */
-#define CC2640R2_LAUNCHXL_PIN_BTN1              IOID_13
-#define CC2640R2_LAUNCHXL_PIN_BTN2              IOID_14
+//#define CC2640R2_LAUNCHXL_PIN_BTN1              IOID_13
+//#define CC2640R2_LAUNCHXL_PIN_BTN2              IOID_14
 
 /* GPIO */
 #define CC2640R2_LAUNCHXL_GPIO_LED_ON           1
@@ -106,10 +106,10 @@ extern const PIN_Config BoardGpioInitTable[];
 #define CC2640R2_LAUNCHXL_I2C0_SDA0             IOID_5
 
 /* LCD (430BOOST - Sharp96 Rev 1.1) */
-#define CC2640R2_LAUNCHXL_LCD_CS                IOID_24 /* SPI chip select */
-#define CC2640R2_LAUNCHXL_LCD_EXTCOMIN          IOID_12 /* External COM inversion */
-#define CC2640R2_LAUNCHXL_LCD_ENABLE            IOID_22 /* LCD enable */
-#define CC2640R2_LAUNCHXL_LCD_POWER             IOID_23 /* LCD power control */
+//#define CC2640R2_LAUNCHXL_LCD_CS                IOID_24 /* SPI chip select */
+//#define CC2640R2_LAUNCHXL_LCD_EXTCOMIN          IOID_12 /* External COM inversion */
+//#define CC2640R2_LAUNCHXL_LCD_ENABLE            IOID_22 /* LCD enable */
+//#define CC2640R2_LAUNCHXL_LCD_POWER             IOID_23 /* LCD power control */
 #define CC2640R2_LAUNCHXL_LCD_CS_ON             1
 #define CC2640R2_LAUNCHXL_LCD_CS_OFF            0
 
@@ -147,8 +147,8 @@ extern const PIN_Config BoardGpioInitTable[];
 /* UART Board */
 #define CC2640R2_LAUNCHXL_UART_RX               IOID_2          /* RXD */
 #define CC2640R2_LAUNCHXL_UART_TX               IOID_3          /* TXD */
-#define CC2640R2_LAUNCHXL_UART_CTS              IOID_19         /* CTS */
-#define CC2640R2_LAUNCHXL_UART_RTS              IOID_18         /* RTS */
+//#define CC2640R2_LAUNCHXL_UART_CTS              IOID_19         /* CTS */
+//#define CC2640R2_LAUNCHXL_UART_RTS              IOID_18         /* RTS */
 
 /*!
  *  @brief  Initialize the general board specific settings
@@ -177,6 +177,7 @@ typedef enum CC2640R2_LAUNCHXL_ADCBufName {
  *  @def    CC2640R2_LAUNCHXL_ADCBuf0SourceName
  *  @brief  Enum of ADCBuf channels
  */
+/*
 typedef enum CC2640R2_LAUNCHXL_ADCBuf0ChannelName {
     CC2640R2_LAUNCHXL_ADCBUF0CHANNEL0 = 0,
     CC2640R2_LAUNCHXL_ADCBUF0CHANNEL1,
@@ -192,7 +193,7 @@ typedef enum CC2640R2_LAUNCHXL_ADCBuf0ChannelName {
 
     CC2640R2_LAUNCHXL_ADCBUF0CHANNELCOUNT
 } CC2640R2_LAUNCHXL_ADCBuf0ChannelName;
-
+*/
 /*!
  *  @def    CC2640R2_LAUNCHXL_ADCName
  *  @brief  Enum of ADCs

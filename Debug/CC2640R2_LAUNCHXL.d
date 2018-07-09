@@ -49,8 +49,6 @@ CC2640R2_LAUNCHXL.obj: E:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/device
 CC2640R2_LAUNCHXL.obj: E:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/devices/cc26x0r2/driverlib/../inc/hw_aux_anaif.h
 CC2640R2_LAUNCHXL.obj: E:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/drivers/dpl/SemaphoreP.h
 CC2640R2_LAUNCHXL.obj: E:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/drivers/dpl/SwiP.h
-CC2640R2_LAUNCHXL.obj: E:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/drivers/ADC.h
-CC2640R2_LAUNCHXL.obj: E:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/drivers/adc/ADCCC26XX.h
 CC2640R2_LAUNCHXL.obj: E:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/drivers/crypto/CryptoCC26XX.h
 CC2640R2_LAUNCHXL.obj: E:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/devices/cc26x0r2/driverlib/crypto.h
 CC2640R2_LAUNCHXL.obj: E:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/devices/cc26x0r2/driverlib/../inc/hw_crypto.h
@@ -136,8 +134,6 @@ E:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/devices/cc26x0r2/driverlib/..
 E:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/devices/cc26x0r2/driverlib/../inc/hw_aux_anaif.h: 
 E:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/drivers/dpl/SemaphoreP.h: 
 E:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/drivers/dpl/SwiP.h: 
-E:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/drivers/ADC.h: 
-E:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/drivers/adc/ADCCC26XX.h: 
 E:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/drivers/crypto/CryptoCC26XX.h: 
 E:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/devices/cc26x0r2/driverlib/crypto.h: 
 E:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/devices/cc26x0r2/driverlib/../inc/hw_crypto.h: 

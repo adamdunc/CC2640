@@ -147,7 +147,7 @@ BIN_OUTPUTS__QUOTED += \
 
 # All Target
 all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
-	@$(MAKE) --no-print-directory -Onone "empty_CC2640R2_LAUNCHXL_tirtos_ccs_IoTIC.out"
+	@$(MAKE) --no-print-directory -Onone "empty_CC2640R2_LAUNCHXL_tirtos_ccs_IoTIC.out" secondary-outputs
 
 dependents:
 	-cd E:/ti/workspace1/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs/Debug && $(MAKE) clean all
@@ -166,6 +166,7 @@ empty_CC2640R2_LAUNCHXL_tirtos_ccs_IoTIC.hex: $(EXE_OUTPUTS)
 	"E:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.2.LTS/bin/armhex"  -o "empty_CC2640R2_LAUNCHXL_tirtos_ccs_IoTIC.hex" $(EXE_OUTPUTS__QUOTED)
 	@echo 'Finished building: $(strip $(EXE_OUTPUTS__QUOTED))'
 	@echo ' '
+	@$(MAKE) --no-print-directory post-build
 
 # Other Targets
 clean:
@@ -174,6 +175,12 @@ clean:
 	-$(RM) "CC2640R2_LAUNCHXL.d" "ccfg.d" "empty.d" "main_tirtos.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
+
+post-build:
+	-E:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.2.LTS/bin/armhex -order MS --memwidth=8 --romwidth=8 --intel -o empty_CC2640R2_LAUNCHXL_tirtos_ccs_IoTIC.hex empty_CC2640R2_LAUNCHXL_tirtos_ccs_IoTIC.out
+	-@echo ' '
+
+secondary-outputs: $(BIN_OUTPUTS)
 
 .PHONY: all clean dependents
 .SECONDARY:
