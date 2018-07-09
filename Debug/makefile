@@ -150,7 +150,7 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@$(MAKE) --no-print-directory -Onone "empty_CC2640R2_LAUNCHXL_tirtos_ccs_IoTIC.out" secondary-outputs
 
 dependents:
-	-cd E:/ti/workspace1/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs/Debug && $(MAKE) clean all
+	-cd E:/ti/workspace1/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs/Debug && $(MAKE) all
 
 # Tool invocations
 empty_CC2640R2_LAUNCHXL_tirtos_ccs_IoTIC.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) E:/ti/workspace1/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs/Debug/tirtos_builds_CC2640R2_LAUNCHXL_release_ccs.lib
